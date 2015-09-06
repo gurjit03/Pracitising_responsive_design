@@ -1,0 +1,408 @@
+header , footer , section , aside , article , figure , nav {
+	display : block;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin : 0 auto;
+	width : 100%;
+}
+
+a {
+	text-decoration: none;
+	color : rgba(0,0,0,0.9);
+}
+
+/***** MOBILE FIRST APRROACH  *****/
+
+@media screen and (min-width : 15em) {
+	
+	div.logo  {
+		text-align : center;
+	}
+	.logo h1 {
+		position : absolute;
+		margin : 0 auto;
+		top : 1%;
+		left : 0;
+		right : 0;
+		color : black;
+		font-size : 1.8em;
+		font-style: italic;
+		font-weight : bold;
+	}
+
+	/*MAIN MENU*/
+	nav.main {
+		width : 100%;
+		list-style : none;
+	}
+	nav.main ul {
+		text-align : center;
+	}
+
+	nav.main ul li {
+		background-color: rgba(0,0,0,0.7);
+		padding : 5px;
+		border-bottom : 2px solid white;
+	}
+
+	nav.main ul li a {
+		font-style: italic;
+		color : rgba(255,255,255,0.9);
+	}
+
+	header {
+		position : relative;
+	}
+
+	header img {
+		width : 100%;
+	}
+
+	.adm {
+		color : white;
+		text-align: center;
+	}
+
+	.adm h1 {
+		position : absolute;
+		top : 45%;
+		width : 100%;
+	}
+
+	.adm button {
+		position : absolute;
+		width : 100px;
+		top : 55%;
+		/* margin : 0 auto;
+		left : 0;
+		right : 0; */
+		left : 50%;
+		margin-left: -50px;
+	}
+	.container {
+		width : 100%;
+	}
+
+	.img_con {
+		width : 30%;
+		float : left;
+		padding : 1.5%;
+		text-align: center;
+	}
+
+	.img_con p a{
+		font-size: 0.8em;
+	}
+
+	.img_con img {
+		width : 100%;
+	}
+	/* div inside of container class */
+	.more {
+		width : 96%;
+		display : inline-block;
+		padding : 4% 2%;
+		background-color: rgba(198,184,170,0.9);
+		text-align : center;
+	}
+
+	.more p {
+		font-size: 1.18em;
+	}
+
+	.more a {
+		color : white;
+	}
+
+	section.story {
+		text-align: center;
+		background : rgba(215,110,01,0.9);	
+		padding-top : 5%;
+		padding-bottom : 5%;
+		color : white;
+	}
+
+	h1.tagline {
+		padding : 1%;
+		font-size : 1.2em;
+		margin-bottom : 5%;
+	}
+
+	h1.former {
+		margin-bottom : 5%;
+	}
+	.fl_r p , .st p {
+		margin : 5% 0;
+	}
+	.facilities {
+		background-color: #e0e0eb;
+		font-size : 1.3em;
+		padding: 4% 1% 4% 2%;
+		text-align: center;
+	}
+	.volly {
+		width : 100%;
+		
+		} 
+	.volly img {
+		width : 100%;
+	}
+
+	.navFooter {
+		background-color: #e0e0eb;
+		padding : 5%;
+		text-align: center;
+		margin : 0	;
+	}
+
+	.navFooter li {
+		display : inline;
+		margin : 3%;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	.logo h1 {
+		font-size : 2.5em;
+	}
+
+	/*
+		top menu
+	*/
+	nav.main {
+		width : 100%;
+		position : absolute;
+		top : 50px;
+		text-align: center;
+		background : white;
+		padding : 0;
+	}
+
+	nav.main ul {
+		display : inline-block;
+	}
+
+	nav.main ul li {
+		float : left;
+		background-color: white;
+		border : none;		
+		border-right : 1px solid rgba(0,0,0,0.9);
+	}
+
+	nav.main ul li a {
+		color : rgba(0,0,0,.9);
+		background-color: white;	 
+	}
+	.container p {
+		font-size: 1.3em;
+	}
+	
+	.adm h1 {
+		font-size: 1.6em;
+	}
+
+	section.story {
+		font-size : 1.5em;
+	}
+
+}
+
+/******* DESKTOP FIRST APPROACH */
+
+@media screen and (min-width : 65em) {
+
+a {
+	text-decoration : none;
+}
+div.logo {
+	width : auto;
+	top : 0;
+	text-align: left;
+}
+
+.logo > h1 {
+	/* float : left */;
+	font-style : italic;
+	color : rgba(215,110,01	,0.9);
+	font-size: 40px;
+	margin : 0;
+	padding : 0;
+	display: inline-block;
+	width : 100%;
+}
+
+header {
+	max-height: 900px;
+}
+
+nav.main {
+	display: inline-block;
+	position : absolute;
+	top : 0px;
+	text-align: right;
+	font-style : italic;
+	background: none;
+}
+
+nav.main ul li , nav.main ul li a {
+	background: none;
+}
+
+nav.main li {
+	margin : 5px;
+	float : left;
+	padding : 5px;
+	border-right : 1px solid rgba(65,24,02,1);
+	background : none;
+}
+
+nav.main li a {
+	color : rgba(65,24,2,1);
+	text-decoration: none;
+}
+
+header {
+	position : relative;
+}
+
+div.adm {
+	text-align: center;
+	top : 50%;
+}
+
+button.btn {
+	top : 50%;
+}
+
+/* 3 images together*/
+.container {
+	width : 50%;
+	padding : 0;
+	margin : 0;
+}
+
+.container > div {
+	margin : 0;
+}
+
+.container div p {
+	font-size: 1.6em;
+}
+
+.clear {
+	clear : both;
+}
+
+.img_con {
+	margin: 5px;
+	float : left;
+	text-align : center;
+	margin-bottom : 20px;	
+}
+
+.img_con a {
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.more {
+	width : 50%;
+	text-align : center;
+	/*padding-top: 40px;*/
+	margin : 0;
+	padding : 0;
+	padding : 6% 0;
+	background: white;
+	display : inline-block;
+}
+.more p{
+	/*display : inline;*/
+	font-size: 3em;
+}
+
+.more p a {
+	color : rgba(215,110,01	,0.9);
+}
+
+section.story {
+	background: rgba(215,110,01	,0.9);
+	text-align: center;
+	font-size: 40px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	color : white;
+}
+
+h1.tagline {
+	margin-bottom: 60px;
+}
+
+h1.former {
+	margin-bottom : 30px;
+	
+}
+div.st_img_cont {
+	font-size: 35px;
+	width : auto;
+}
+.st{
+	float : left;
+	margin-left: 20%;
+}
+
+.st_img_cont p {
+	margin-top: 20px;
+}
+
+.fl_r {
+	float : right;
+	margin-right: 20%;
+}
+.facilities {
+	float : left;
+	width : 50%;
+	text-align: center;
+	padding : 0;
+	margin : 0;
+	background: white;
+	padding : 170px 0;
+}
+.facilities > p {
+	font-size: 2em;
+}
+.volly {
+	width : 50%;
+	float : left;
+}
+
+nav.navFooter {
+	margin-top: -3px;
+	width : auto;
+	min-height: 30px;
+	background: rgba(215,110,01	,0.9);
+	text-align: center;
+}
+
+nav.navFooter ul {
+	display : inline-block;
+}
+
+nav.navFooter ul li {
+	font-style: italic;
+	float : left;
+	margin : 5px;
+	padding-right : 5px;
+	border-right: 1px dotted darkgray;
+}
+
+footer {
+	text-align: center;
+	background: #f3f3f3;
+	height: 200px;
+	line-height: 200px;
+	font-size : 18px;
+}
+}
